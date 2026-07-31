@@ -1,5 +1,5 @@
 import { solutionData } from "@/data/solution/solutionData";
-import SolutionCard from "@/components/sections/SolutionCard";
+import SolutionCard from "@/components/sections/solution/SolutionCard";
 
 export default function SolutionSection() {
   return (
