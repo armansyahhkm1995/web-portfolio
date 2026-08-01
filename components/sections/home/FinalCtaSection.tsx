@@ -26,7 +26,7 @@ export default function FinalCtaSection() {
             systems, operational technologies, and digital solutions.
           </p>
         </div>
-        <div className="my-10 flex justify-center">
+        <div className="my-10 flex flex-col gap-4 sm:flex-row">
           <PrimaryLinkButton href={contactData.href}>
             Request Consultation
           </PrimaryLinkButton>
