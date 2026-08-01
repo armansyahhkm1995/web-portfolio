@@ -42,7 +42,7 @@ export default function HeroSection() {
             readiness, safety, and long-term operational performance.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <PrimaryLinkButton href="#certificate">
               See Our Certificate
             </PrimaryLinkButton>

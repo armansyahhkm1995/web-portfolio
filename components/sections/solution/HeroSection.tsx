@@ -42,7 +42,7 @@ export default function HeroSection() {
             integrated technologies that improve operational performance.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <PrimaryLinkButton href={contactData.href}>
               Request Consultation
             </PrimaryLinkButton>
