@@ -16,7 +16,7 @@ export default function PrimaryLinkButton({
     <Link
       href={href}
       className={cn(
-        "body-sm rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground transition hover:bg-hover",
+        "body-sm rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground transition hover:bg-hover text-center",
         className,
       )}
     >
