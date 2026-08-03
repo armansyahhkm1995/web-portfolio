@@ -1,5 +1,6 @@
 "use client";
 
+import { submitContact } from "@/lib/services/contact";
 import { ArrowRight } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -29,15 +30,19 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit(values: ContactFormValues) {
-    console.log(values);
+  async function onSubmit(values: ContactFormValues) {
+    try {
+      await submitContact(values);
 
-    toast.success("Consultation request submitted!", {
-      description:
-        "Thank you for contacting Falah. Our team will get back to you within 1–2 business days.",
-    });
+      toast.success("Consultation request submitted!", {
+        description:
+          "Thank you for contacting Falah. Our team will get back to you within 1–2 business days.",
+      });
 
-    reset();
+      reset();
+    } catch {
+      toast.error("Failed to submit consultation request.");
+    }
   }
   const {
     handleSubmit,
